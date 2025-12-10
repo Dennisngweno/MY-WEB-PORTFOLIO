@@ -65,23 +65,30 @@ header {
   width: 220px;
   border-radius: 50%;
 }
-
-.navbar_wrapper > ul > a {
-  display: inline-block;
-  padding: 5px;
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  border-bottom: 4px solid transparent;
-  transition: 2s;
-  gap: 10px;
+.navbar_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  
 }
-.navbar_wrapper > ul > a:hover {
-  display: inline-block;
-  padding: 5px;
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  border-bottom: 4px solid #cea135;
-  letter-spacing: 1px;
+
+.navbar_wrapper>.navlinkwraper{
+  display: flex;
+  justify-content: center;
+ width: 80px;
+ height: 30px;
+ padding: 5px;
+}
+.navbar_wrapper>.navlinkwraper>a{
+text-decoration: none;
+font-weight: bolder;
+color: white;
+border-bottom: 2px solid transparent;
+transition: 2s;
+}
+.navbar_wrapper>.navlinkwraper>a:hover{
+  border-bottom: 2px solid #cea135;
+  letter-spacing: 2px;
 }
