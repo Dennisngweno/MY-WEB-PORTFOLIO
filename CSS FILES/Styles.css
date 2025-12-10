@@ -4,29 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .clock-container {
   text-align: center;
   padding: 20px 40px;
-  background: #161b22;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  border: 1px solid #30363d;
-}
+  }
 
 #clock {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2px;
   color: white;
-  border-bottom: 4px solid transparent;
+  
 }
 
 #date {
@@ -41,7 +29,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #000;
-  width: 1500px;
+  width: 100vw;
   height: 140px;
   margin-top: 60px;
   padding: 10px;
