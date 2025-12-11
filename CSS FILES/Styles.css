@@ -7,14 +7,13 @@
 .clock-container {
   text-align: center;
   padding: 20px 40px;
-  }
+}
 
 #clock {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2px;
   color: white;
-  
 }
 
 #date {
@@ -29,12 +28,14 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #000;
-  width: 100vw;
+  width: 100%;
   height: 140px;
-  margin-top: 60px;
+  margin-top: 80px;
   padding: 10px;
   border-bottom: 4px solid #cea135;
   border-top: 4px solid #cea135;
+  position: sticky;
+  top: 60px;
 }
 .profile_wraper {
   display: flex;
@@ -49,34 +50,42 @@ header {
 }
 
 .profile_wraper > img {
-  height: 220px;
-  width: 220px;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
+  background-size: 100%;
 }
-.navbar_wrapper{
+.navbar_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 6px;
+
   padding: 6px;
-  
 }
 
-.navbar_wrapper>.navlinkwraper{
+.navbar_wrapper > .navlinkwraper {
   display: flex;
   justify-content: center;
- width: 80px;
- height: 30px;
- padding: 5px;
+  width: 80px;
+  height: 30px;
+  padding: 5px;
 }
-.navbar_wrapper>.navlinkwraper>a{
-text-decoration: none;
-font-weight: bolder;
-color: white;
-border-bottom: 2px solid transparent;
-transition: 2s;
+.navbar_wrapper > .navlinkwraper > a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: 2s;
 }
-.navbar_wrapper>.navlinkwraper>a:hover{
+.navbar_wrapper > .navlinkwraper > a:hover {
   border-bottom: 2px solid #cea135;
   letter-spacing: 2px;
+}
+main {
+  margin-top: 40px;
+}
+main > div > img {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
 }
