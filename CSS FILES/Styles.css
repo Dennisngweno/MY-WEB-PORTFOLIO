@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
+  background-color: #11122b;
   width: 100%;
   height: 140px;
   margin-top: 80px;
@@ -45,7 +45,7 @@ header {
   width: 250px;
   border-radius: 50%;
   border: 6px solid #cea135;
-  background-color: #000;
+  background-color: #11122b;
   padding: 10px;
 }
 
@@ -83,7 +83,32 @@ header {
 main {
   margin-top: 80px;
 }
-main > div > img {
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  width: 100%;
+  height: 200px;
+  border: 4px solid #11122b;
+  margin-top: 80px;
+}
+iframe {
+  width: 100%;
+  height: 20vw;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.messagewrapper {
+  display: flex;
+  justify-content: center;
+}
+.message {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.messagewrapper > .imagewrapper > img {
   width: 200px;
   height: 200px;
   border: 2px solid #cea135;
@@ -91,4 +116,12 @@ main > div > img {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.messagewrapper > .message > p {
+  font-size: 0.8em;
+}
+footer {
+  background-color: #11122b;
+  width: 100%;
+  height: 400px;
 }
