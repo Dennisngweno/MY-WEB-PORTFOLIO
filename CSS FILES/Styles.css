@@ -105,6 +105,7 @@ iframe {
   height: 200px;
   width: 100%;
   gap: 100px;
+  margin-top: 60px;
 }
 
 .messagewrapper > img {
@@ -117,16 +118,13 @@ iframe {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.messagewrapper > .message > p {
-  font-size: 0.8em;
-}
+
 footer {
   background-color: #11122b;
   width: 100%;
   height: 400px;
 }
 .home_page {
-  position: relative;
   height: 500px;
   width: auto;
   background-attachment: fixed;
@@ -134,15 +132,29 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.services{
+.services {
   display: flex;
   justify-content: space-around;
   height: 200px;
- 
 }
-.services>div{
-margin-top: 320px;
-color: white;
-
-
+.services > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 320px;
+  border: 6px solid #cea135;
+  border-radius: 6px;
+  height: 140px;
+  width: 240px;
+}
+.services > div:hover {
+  color: white;
+  border-radius: 10px; /* Optional: for rounded glow corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* The glow effect */
+}
+.services > div > h2 {
+  font-weight: bolder;
+  color: white;
+  font-size: 28px;
 }
