@@ -30,3 +30,41 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
+function updateClock() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2, "0");
+  const m = String(now.getMinutes()).padStart(2, "0");
+  const s = String(now.getSeconds()).padStart(2, "0");
+
+  document.getElementById("clock").textContent = `${h}:${m}:${s}`;
+}
+
+function updateDate() {
+  const now = new Date();
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  const dayName = days[now.getDay()];
+  const day = String(now.getDate()).padStart(2, "0");
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const year = now.getFullYear();
+
+  document.getElementById(
+    "date"
+  ).textContent = `${dayName}, ${day}-${month}-${year}`;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateClock();
+  updateDate();
+
+  setInterval(updateClock, 1000);
+  setInterval(updateDate, 60000);
+});

@@ -25,7 +25,7 @@
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #11122b;
   width: 100%;
@@ -37,7 +37,25 @@ header {
   position: sticky;
   top: 60px;
 }
-
+.mainpicswrapper {
+  display: flex;
+  width: auto;
+  height: 400px;
+  justify-content: center;
+}
+.mainpics {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.mainpics > img {
+  width: auto;
+  height: auto;
+}
 .profile_wraper {
   display: flex;
   justify-content: center;
@@ -48,7 +66,7 @@ header {
   border: 6px solid #cea135;
   background-color: #11122b;
   padding: 10px;
- 
+  margin-left: 225px;
 }
 
 .profile_wraper > img {
@@ -83,7 +101,7 @@ header {
   letter-spacing: 2px;
 }
 main {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 iframe {
@@ -92,31 +110,35 @@ iframe {
   margin-top: 80px;
   margin-bottom: 0px;
 }
+
 .messagewrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  height: 520px;
-  width: 100%;
-  gap: 100px;
-  margin-top: 60px;
-}
-.messagewrapper > .message {
-  display: flex;
-
-  align-items: center;
+  max-width: 900px;
+  margin: 120px auto;
+  margin-bottom: 100px;
+  line-height: 1.7;
 }
 
-.messagewrapper > img {
-  width: 200px;
-  height: 200px;
+.messagewrapper img {
   float: left;
-  border: 2px solid #cea135;
-  border-radius: 6px;
+  width: 180px; /* adjust size as needed */
+  margin: 0 20px 10px 0; /* space between image & text */
+  border-radius: 12px; /* optional – modern look */
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.message p {
+  margin-bottom: 20px; /* space between paragraphs */
+  text-align: justify; /* optional – professional text flow */
+  color: #11122b;
+}
+
+/* Clear float after content */
+.messagewrapper::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 footer {
@@ -126,7 +148,7 @@ footer {
   margin-top: 0px;
 }
 .home_page {
-  height: 500px;
+  height: 600px;
   width: auto;
   background-attachment: fixed;
   background-position: center;
@@ -143,21 +165,23 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-top: 320px;
+  margin-top: 80px;
   border: 6px solid #cea135;
   border-radius: 6px;
-  height: 140px;
+  height: 100px;
   width: 240px;
   transition: 2s;
+  color: white;
 }
 .services > div:hover {
   background-color: #cea135;
-  color: white;
   border-radius: 10px; /* Optional: for rounded glow corners */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* The glow effect */
+  color: #11122b;
 }
 .services > div > h2 {
   font-weight: bolder;
-  color: white;
+
   font-size: 28px;
+  transition: 2s;
 }
