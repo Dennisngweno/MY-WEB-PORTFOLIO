@@ -68,3 +68,15 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(updateClock, 1000);
   setInterval(updateDate, 60000);
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".mainpics img");
+  let current = 0;
+
+  images[current].classList.add("active");
+
+  setInterval(() => {
+    images[current].classList.remove("active");
+    current = (current + 1) % images.length;
+    images[current].classList.add("active");
+  }, 2500);
+});
