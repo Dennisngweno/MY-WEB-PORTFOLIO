@@ -31,7 +31,7 @@ header {
 .header {
   position: sticky;
   top: 20px;
-  height: 140px;
+  height: 120px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -225,7 +225,7 @@ footer > .footer > .contacts {
   align-items: center;
   padding: 10px;
   height: auto;
-  width: 30%;
+  width: 40%;
   color: #11122b;
   gap: 26px;
 }
@@ -234,9 +234,10 @@ footer > .footer > .contacts > .socialmedia {
   justify-content: space-between;
   align-items: center;
   height: 40px;
-  width: 100%;
+  width: 60%;
   padding: 10px;
   font-size: 1.5em;
+  margin-right: 120px;
   margin-bottom: 0px;
 }
 footer > .footer > .contacts > .socialmedia > i {
