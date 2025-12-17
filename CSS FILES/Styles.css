@@ -218,3 +218,40 @@ footer {
   opacity: 0.8;
   border-radius: 20px;
 }
+footer > .footer > .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  width: 30%;
+  color: #11122b;
+  gap: 26px;
+}
+footer > .footer > .contacts > .socialmedia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+footer > .footer > .contacts > .socialmedia > i {
+  color: #11122b;
+}
+footer > .footer > .contacts > .socialmedia > i:hover {
+  color: #cea135;
+  transition: 2s;
+}
+footer > .footer > .contacts > .phonenumbers {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 0px;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+}
