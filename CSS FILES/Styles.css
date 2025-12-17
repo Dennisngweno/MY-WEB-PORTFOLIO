@@ -22,10 +22,15 @@
   opacity: 0.9;
   color: white;
 }
-
 header {
   position: sticky;
-  top: 60px;
+  top: 0;
+  z-index: 1000; /* keeps it above other content */
+  background: #ffffff; /* required so content doesn't show through */
+}
+.header {
+  position: sticky;
+  top: 20px;
   height: 140px;
   display: flex;
   justify-content: space-around;
@@ -46,9 +51,9 @@ header {
 
 .mainpics {
   position: relative;
-  width: 60%;
-  height: 80%;
-  margin-top: 26px;
+  width: 90%;
+  height: 66%;
+  margin-top: 16px;
   border: 6px solid #11122b;
   border-radius: 10px;
 }
@@ -113,7 +118,7 @@ header {
   letter-spacing: 2px;
 }
 main {
-  margin-top: 60px;
+  margin-top: 30px;
   padding-top: 40px;
 }
 
@@ -146,6 +151,10 @@ iframe {
   text-align: justify; /* optional – professional text flow */
   color: #11122b;
 }
+.message :nth-child(1)::first-letter {
+  font-size: 2em;
+  color: #cea135;
+}
 
 /* Clear float after content */
 .messagewrapper::after {
@@ -155,6 +164,9 @@ iframe {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #11122b;
   width: 100%;
   height: 320px;
@@ -171,14 +183,14 @@ footer {
 .services {
   display: flex;
   justify-content: space-around;
-  height: 200px;
+  height: 10px;
 }
 .services > div {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-top: 80px;
+  margin-top: 20px;
   border: 6px solid #cea135;
   border-radius: 6px;
   height: 100px;
@@ -194,7 +206,15 @@ footer {
 }
 .services > div > h2 {
   font-weight: bolder;
-
   font-size: 28px;
   transition: 2s;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: 94%;
+  width: 98%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 20px;
 }
