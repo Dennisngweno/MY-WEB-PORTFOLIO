@@ -270,7 +270,7 @@ footer > .footer > .contacts > .phonenumbers {
   border-radius: 2px;
   border: none;
   border-bottom: 3px solid #11122b;
-  width: 100%;
+  width: 500px;
   display: block;
   transition: all 0.3s;
 }
