@@ -80,4 +80,3 @@ document.addEventListener("DOMContentLoaded", () => {
     images[current].classList.add("active");
   }, 2500);
 });
-
